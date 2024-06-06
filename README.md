@@ -1,2 +1,24 @@
-# lambdalabs-prices
-Prices of LambdaLabs VRAM per machine per hour
+# VRAM Analysis on Lambda Labs
+
+## Why More VRAM Doesn't Mean Better Performance
+
+More VRAM allows for larger models and datasets, but it doesn't inherently improve computational power or processing speed. Performance depends on factors such as GPU architecture, CUDA cores, memory bandwidth, and workload type. More VRAM is beneficial for specific tasks but doesn't guarantee overall better performance.
+
+## Output
+
+The table below is generated from `output.csv`:| GPUs                      |   VRAM / GPU |   vCPUs | RAM      | STORAGE     | PRICE*      |   GPU Count |   PRICE |   Full VRAM | Price / 100GB   |
+|:--------------------------|-------------:|--------:|:---------|:------------|:------------|------------:|--------:|------------:|:----------------|
+| 1x NVIDIA A6000           |           48 |      14 | 100 GiB  | 200 GiB SSD | $0.80 / hr  |           1 |    0.8  |          48 | 1.67 $/h/100GB  |
+| 2x NVIDIA A6000           |           48 |      28 | 200 GiB  | 1 TiB SSD   | $1.60 / hr  |           2 |    1.6  |          96 | 1.67 $/h/100GB  |
+| 4x NVIDIA A6000           |           48 |      56 | 400 GiB  | 1 TiB SSD   | $3.20 / hr  |           4 |    3.2  |         192 | 1.67 $/h/100GB  |
+| 1x NVIDIA Quadro RTX 6000 |           24 |      14 | 46 GiB   | 512 GiB SSD | $0.50 / hr  |           1 |    0.5  |          24 | 2.08 $/h/100GB  |
+| 8x NVIDIA A100 SXM        |           80 |     240 | 1800 GiB | 20 TiB SSD  | $14.32 / hr |           8 |   14.32 |         640 | 2.24 $/h/100GB  |
+| 1x NVIDIA H100 PCIe New   |           80 |      26 | 200 GiB  | 1 TiB SSD   | $2.49 / hr  |           1 |    2.49 |          80 | 3.11 $/h/100GB  |
+| 1x NVIDIA A10             |           24 |      30 | 200 GiB  | 1.4 TiB SSD | $0.75 / hr  |           1 |    0.75 |          24 | 3.12 $/h/100GB  |
+| 1x NVIDIA A100 SXM        |           40 |      30 | 200 GiB  | 512 GiB SSD | $1.29 / hr  |           1 |    1.29 |          40 | 3.22 $/h/100GB  |
+| 1x NVIDIA A100 PCIe       |           40 |      30 | 200 GiB  | 512 GiB SSD | $1.29 / hr  |           1 |    1.29 |          40 | 3.22 $/h/100GB  |
+| 2x NVIDIA A100 PCIe       |           40 |      60 | 400 GiB  | 1 TiB SSD   | $2.58 / hr  |           2 |    2.58 |          80 | 3.22 $/h/100GB  |
+| 4x NVIDIA A100 PCIe       |           40 |     120 | 800 GiB  | 1 TiB SSD   | $5.16 / hr  |           4 |    5.16 |         160 | 3.22 $/h/100GB  |
+| 8x NVIDIA A100 SXM        |           40 |     124 | 1800 GiB | 6 TiB SSD   | $10.32 / hr |           8 |   10.32 |         320 | 3.22 $/h/100GB  |
+| 8x NVIDIA Tesla V100      |           16 |      92 | 448 GiB  | 5.9 TiB SSD | $4.40 / hr  |           8 |    4.4  |         128 | 3.44 $/h/100GB  |
+| 8x NVIDIA H100 SXM New    |           80 |     208 | 1800 GiB | 26 TiB SSD  | $27.92 / hr |           8 |   27.92 |         640 | 4.36 $/h/100GB  |
