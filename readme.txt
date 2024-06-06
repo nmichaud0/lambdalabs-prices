@@ -7,3 +7,4 @@ More VRAM allows for larger models and datasets, but it doesn't inherently impro
 ## Output
 
 The table below is generated from `output.csv`:
+

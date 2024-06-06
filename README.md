@@ -6,7 +6,9 @@ More VRAM allows for larger models and datasets, but it doesn't inherently impro
 
 ## Output
 
-The table below is generated from `output.csv`:| GPUs                      |   VRAM / GPU |   vCPUs | RAM      | STORAGE     | PRICE*      |   GPU Count |   PRICE |   Full VRAM | Price / 100GB   |
+The table below is generated from `output.csv`:
+
+| GPUs                      |   VRAM / GPU |   vCPUs | RAM      | STORAGE     | PRICE*      |   GPU Count |   PRICE |   Full VRAM | Price / 100GB   |
 |:--------------------------|-------------:|--------:|:---------|:------------|:------------|------------:|--------:|------------:|:----------------|
 | 1x NVIDIA A6000           |           48 |      14 | 100 GiB  | 200 GiB SSD | $0.80 / hr  |           1 |    0.8  |          48 | 1.67 $/h/100GB  |
 | 2x NVIDIA A6000           |           48 |      28 | 200 GiB  | 1 TiB SSD   | $1.60 / hr  |           2 |    1.6  |          96 | 1.67 $/h/100GB  |
